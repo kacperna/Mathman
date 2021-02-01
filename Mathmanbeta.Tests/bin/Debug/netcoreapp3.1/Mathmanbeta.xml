@@ -1,0 +1,670 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Mathmanbeta</name>
+    </assembly>
+    <members>
+        <member name="T:Mathmanbeta.Game">
+            <summary>
+            Klasa odpowiedzialna za stan gry, zliczająca poziom, wynik oraz liczbę pozostałych żyć
+            </summary>
+        </member>
+        <member name="F:Mathmanbeta.Game.Score">
+            <summary>
+            Wynik
+            </summary>
+        </member>
+        <member name="F:Mathmanbeta.Game.Highscore">
+            <summary>
+            Najlepszy wynik
+            </summary>
+        </member>
+        <member name="F:Mathmanbeta.Game.Lives">
+            <summary>
+            Liczba żyć
+            </summary>
+        </member>
+        <member name="F:Mathmanbeta.Game.ScoreText">
+            <summary>
+            Etykieta zawierająca wynik
+            </summary>
+        </member>
+        <member name="F:Mathmanbeta.Game.HighScore">
+            <summary>
+            Etykieta zawierająca najlepszy wynik
+            </summary>
+        </member>
+        <member name="F:Mathmanbeta.Game.LifeImage">
+            <summary>
+            tablica z obrazkami dostępnych żyć
+            </summary>
+        </member>
+        <member name="F:Mathmanbeta.Game.Level">
+            <summary>
+            Numer poziomu
+            </summary>
+        </member>
+        <member name="M:Mathmanbeta.Game.CreateLives(System.Windows.Forms.Form)">
+            <summary>
+            Metoda która ustawia grę w jej początkowej wersji oraz tworzy tablicę pól obrazów z życiami
+            </summary>
+            <param name="formInstance">Komunikacja z formularzem wyświetlającym liczbę żyć</param>
+        </member>
+        <member name="M:Mathmanbeta.Game.ChangeLevel">
+            <summary>
+            Metoda która zwiększa poziom i po każdej jego inkrementacji przywraca avatara i duchy do pozycji początkowej
+            </summary>
+        </member>
+        <member name="M:Mathmanbeta.Game.CreatePlayerDetails(System.Windows.Forms.Form)">
+            <summary>
+            Metoda odpowiedzialna za stworzenie i konfigurację etykiety zawierającej wynik
+            </summary>
+            <param name="formInstance">Komunikacja z formularzem wyświetlającym wynik</param>
+        </member>
+        <member name="M:Mathmanbeta.Game.UpdateScore(System.Int32)">
+            <summary>
+            Metoda odpowiedzialna za wyświetlanie i zliczanie zdobytego wyniku
+            </summary>
+            <param name="amount">Liczba zdobytych punktów</param>
+        </member>
+        <member name="M:Mathmanbeta.Game.SetLives">
+            <summary>
+            Metoda odpowiedzialna za wyświetlanie liczby żyć
+            </summary>
+        </member>
+        <member name="M:Mathmanbeta.Game.LoseLife">
+            <summary>
+            Metoda zmniejszająca liczbę żyć
+            </summary>
+        </member>
+        <member name="T:Mathmanbeta.GameBoard">
+            <summary>
+            Klasa odpowiedzialna za konfigurcje i macierzowy opis planszy gry
+            </summary>
+        </member>
+        <member name="F:Mathmanbeta.GameBoard.BoardImage">
+            <summary>
+            Picture box zawierający planszę gry
+            </summary>
+        </member>
+        <member name="F:Mathmanbeta.GameBoard.Matrix">
+            <summary>
+            Tablica dwuwymiarowa zawierająca macierz opisującą planszę gry
+            </summary>
+        </member>
+        <member name="M:Mathmanbeta.GameBoard.CreateBoardImage(System.Windows.Forms.Form)">
+            <summary>
+            Wczytanie i konfiguracja pola graficznego gry
+            </summary>
+            <param name="formInstance">Komunikacja z formularzem wyświetlającym planszę gry</param>
+        </member>
+        <member name="M:Mathmanbeta.GameBoard.InitialiseBoardMatrix">
+            <summary>
+            Inicjalizacja macierzy opisującej planszę gry
+            01 - możliwe przejście dla duchów i pacmana
+            10 - ściana przejście zablokowane
+            02 - miejsca pojawienia się wyników
+            03 - miejsce startowe avatara
+            04 - możliwe przejście dla pacmana, nie dla duchów
+            11 - możliwe przejście dla duchów, nie dla pacmana
+            15 - miejsce startowe duchów
+            </summary>
+            <returns>Zwraca 2-krotkę zawierającą miejsce startowe pacmana</returns>
+        </member>
+        <member name="T:Mathmanbeta.Ghost">
+            <summary>
+            Klasa odpowiedzialna za konfigurację i mechanikę duchów
+            </summary>
+        </member>
+        <member name="F:Mathmanbeta.Ghost.GhostImage">
+            <summary>
+            Tablica zawierająca obrazki duchów
+            </summary>
+        </member>
+        <member name="F:Mathmanbeta.Ghost.timer">
+            <summary>
+            Timer w którego interwałach poruszająsię duchy 
+            </summary>
+        </member>
+        <member name="M:Mathmanbeta.Ghost.#ctor">
+            <summary>
+            Konstruktor - wczytywanie obrazków duchów,ustalenie ich wielkości oraz ustawienie Timera
+            </summary>
+        </member>
+        <member name="M:Mathmanbeta.Ghost.CreateGhostImage(System.Windows.Forms.Form)">
+            <summary>
+            Tworzenie tablicy pól graficznych zawierających obrazki duchów
+            </summary>
+            <param name="formInstance">Komunikacja z formularzem wyświetlającym duchy</param>
+        </member>
+        <member name="M:Mathmanbeta.Ghost.Set_Ghosts">
+            <summary>
+            Metoda znajdująca pozycje początkowe duchów
+            </summary>
+        </member>
+        <member name="M:Mathmanbeta.Ghost.ResetGhosts">
+            <summary>
+            Metoda wczytująca obrazki duchów na pozycjach początkowych
+            </summary>
+        </member>
+        <member name="M:Mathmanbeta.Ghost.CheckForPacman">
+            <summary>
+            Metoda sprawdzająca kolizję duchów z graczem, każda kolizja to strata jednego życia
+            </summary>
+        </member>
+        <member name="T:Mathmanbeta.Math">
+            <summary>
+            Klasa odpowiedzialna za tworzenie działań i wyników, a także stopniownie trudności
+            </summary>
+        </member>
+        <member name="F:Mathmanbeta.Math.Result">
+            <summary>
+            Tablica etykiet zawierających wyniki
+            </summary>
+        </member>
+        <member name="F:Mathmanbeta.Math.Equation">
+            <summary>
+            Etykieta zawierająca działanie do wykonania
+            </summary>
+        </member>
+        <member name="F:Mathmanbeta.Math.eq">
+            <summary>
+            Działanie
+            </summary>
+        </member>
+        <member name="M:Mathmanbeta.Math.#ctor">
+            <summary>
+            Konstruktor - ustawia Timer
+            </summary>
+        </member>
+        <member name="M:Mathmanbeta.Math.CreateEquation">
+            <summary>
+            Metoda tworząca działania do rozwiązania, oraz stopniująca poziom trudności gry poprzez zwiększanie trudności działań oraz prędkości poruszania się duchów.
+            </summary>
+        </member>
+        <member name="M:Mathmanbeta.Math.CreateLabels">
+            <summary>
+            Metoda losująca rozmieszczenie wyników na planszy oraz zapisująca ich współrzędne.
+            </summary>
+        </member>
+        <member name="M:Mathmanbeta.Math.CreateMath(System.Windows.Forms.Form)">
+            <summary>
+            Metoda wyświetlająca działania i wyniki
+            </summary>
+            <param name="formInstance">Komunikacja z formularzem wyświetlającym działania oraz wyniki</param>
+        </member>
+        <member name="M:Mathmanbeta.Math.CheckForPacman">
+            <summary>
+            Metoda sprawdzająca kolizję gracza z wynikami
+            Wynik dobry - 300 punktów oraz zwiększenie poziomu
+            Wynik zły - strata życia
+            </summary>
+        </member>
+        <member name="T:Mathmanbeta.Pacman">
+            <summary>
+            Klasa odpowiedzialna za konfigurację i mechanikę Pacmana
+            </summary>
+        </member>
+        <member name="F:Mathmanbeta.Pacman.xCoordinate">
+            <summary>
+            Aktualna współrzędna x Pacmana
+            </summary>
+        </member>
+        <member name="F:Mathmanbeta.Pacman.yCoordinate">
+            <summary>
+            Aktualna współrzędna y Pacmana
+            </summary>
+        </member>
+        <member name="F:Mathmanbeta.Pacman.currentDirection">
+            <summary>
+            Aktualny kierunek w którym porusza się Pacman
+            </summary>
+        </member>
+        <member name="F:Mathmanbeta.Pacman.nextDirection">
+            <summary>
+            kolejny kierunek w którym będzie się poruszał Pacman
+            </summary>
+        </member>
+        <member name="M:Mathmanbeta.Pacman.#ctor">
+            <summary>
+            Konstruktor - wczytywanie obrazków Pacmana,ustalenie jego wielkości oraz ustawienie Timera
+            </summary>
+        </member>
+        <member name="M:Mathmanbeta.Pacman.CreatePacmanImage(System.Windows.Forms.Form,System.Int32,System.Int32)">
+            <summary>
+            Metoda która tworzy i konfiguruje pole graficzne Pacmana
+            </summary>
+            <param name="formInstance">Komunikacja z formularzem wyświetlającym Pacmana</param>
+            <param name="StartXCoordinate">Współrzędna początkowa x</param>
+            <param name="StartYCoordinate">Współrzędna początkowa y</param>
+        </member>
+        <member name="M:Mathmanbeta.Pacman.MovePacman(System.Int32)">
+            <summary>
+            Metoda odpowiedzialna za poruszanie się Pacmana
+            </summary>
+            <param name="direction">Kierunek w którym ma poruszać się Pacman</param>
+        </member>
+        <member name="M:Mathmanbeta.Pacman.Set_Pacman">
+            <summary>
+            Metoda ustawiająca Pacmana w pozycji startowej
+            </summary>
+        </member>
+        <member name="M:Mathmanbeta.Program.Main">
+            <summary>
+             The main entry point for the application.
+            </summary>
+        </member>
+        <member name="T:Mathmanbeta.Form1">
+            <summary>
+            Formularz gry
+            </summary>
+        </member>
+        <member name="F:Mathmanbeta.Form1.gameboard">
+            <summary>
+            Obiekt klasy Gameboard
+            </summary>
+        </member>
+        <member name="F:Mathmanbeta.Form1.game">
+            <summary>
+            Obiekt klasy Game
+            </summary>
+        </member>
+        <member name="F:Mathmanbeta.Form1.pacman">
+            <summary>
+            obiekt klasy Pacman
+            </summary>
+        </member>
+        <member name="F:Mathmanbeta.Form1.ghost">
+            <summary>
+            obiekt klasy Ghost
+            </summary>
+        </member>
+        <member name="F:Mathmanbeta.Form1.math">
+            <summary>
+            obiekt klasy Math
+            </summary>
+        </member>
+        <member name="M:Mathmanbeta.Form1.#ctor">
+            <summary>
+            Konstruktor - dodawanie początkowych zasobów gry
+            </summary>
+        </member>
+        <member name="F:Mathmanbeta.Form1.components">
+            <summary>
+             Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Mathmanbeta.Form1.Dispose(System.Boolean)">
+            <summary>
+             Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Mathmanbeta.Form1.InitializeComponent">
+            <summary>
+             Required method for Designer support - do not modify
+             the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Mathmanbeta.Form2">
+            <summary>
+            Menu
+            </summary>
+        </member>
+        <member name="M:Mathmanbeta.Form2.#ctor">
+            <summary>
+            Konstruktor - inicjalizuje menu gry
+            </summary>
+        </member>
+        <member name="F:Mathmanbeta.Form2.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Mathmanbeta.Form2.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Mathmanbeta.Form2.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Mathmanbeta.Form3">
+            <summary>
+            Okno Help
+            </summary>
+        </member>
+        <member name="M:Mathmanbeta.Form3.#ctor">
+            <summary>
+            Konstruktor okna Help
+            </summary>
+        </member>
+        <member name="F:Mathmanbeta.Form3.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Mathmanbeta.Form3.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Mathmanbeta.Form3.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Mathmanbeta.Properties.Resources">
+            <summary>
+              Klasa zasobu wymagająca zdefiniowania typu do wyszukiwania zlokalizowanych ciągów itd.
+            </summary>
+        </member>
+        <member name="P:Mathmanbeta.Properties.Resources.ResourceManager">
+            <summary>
+            Zwraca buforowane wystąpienie ResourceManager używane przez tę klasę.
+            </summary>
+        </member>
+        <member name="P:Mathmanbeta.Properties.Resources.Culture">
+            <summary>
+              Przesłania właściwość CurrentUICulture bieżącego wątku dla wszystkich
+              przypadków przeszukiwania zasobów za pomocą tej klasy zasobów wymagającej zdefiniowania typu.
+            </summary>
+        </member>
+        <member name="P:Mathmanbeta.Properties.Resources.Board0">
+            <summary>
+              Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Mathmanbeta.Properties.Resources.Board01">
+            <summary>
+              Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Mathmanbeta.Properties.Resources.Controls">
+            <summary>
+              Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Mathmanbeta.Properties.Resources.Exit_green">
+            <summary>
+              Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Mathmanbeta.Properties.Resources.EXIT_red">
+            <summary>
+              Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Mathmanbeta.Properties.Resources.eyes">
+            <summary>
+              Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Mathmanbeta.Properties.Resources.Ghost_0_1">
+            <summary>
+              Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Mathmanbeta.Properties.Resources.Ghost_0_2">
+            <summary>
+              Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Mathmanbeta.Properties.Resources.Ghost_0_3">
+            <summary>
+              Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Mathmanbeta.Properties.Resources.Ghost_0_4">
+            <summary>
+              Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Mathmanbeta.Properties.Resources.Ghost_1_1">
+            <summary>
+              Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Mathmanbeta.Properties.Resources.Ghost_1_2">
+            <summary>
+              Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Mathmanbeta.Properties.Resources.Ghost_1_3">
+            <summary>
+              Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Mathmanbeta.Properties.Resources.Ghost_1_4">
+            <summary>
+              Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Mathmanbeta.Properties.Resources.Ghost_2_1">
+            <summary>
+              Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Mathmanbeta.Properties.Resources.Ghost_2_2">
+            <summary>
+              Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Mathmanbeta.Properties.Resources.Ghost_2_3">
+            <summary>
+              Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Mathmanbeta.Properties.Resources.Ghost_2_4">
+            <summary>
+              Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Mathmanbeta.Properties.Resources.Ghost_3_1">
+            <summary>
+              Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Mathmanbeta.Properties.Resources.Ghost_3_2">
+            <summary>
+              Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Mathmanbeta.Properties.Resources.Ghost_3_3">
+            <summary>
+              Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Mathmanbeta.Properties.Resources.Ghost_3_4">
+            <summary>
+              Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Mathmanbeta.Properties.Resources.Ghost_4_1">
+            <summary>
+              Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Mathmanbeta.Properties.Resources.Ghost_4_2">
+            <summary>
+              Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Mathmanbeta.Properties.Resources.Ghost_4_3">
+            <summary>
+              Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Mathmanbeta.Properties.Resources.Ghost_4_4">
+            <summary>
+              Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Mathmanbeta.Properties.Resources.Ghost_5_1">
+            <summary>
+              Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Mathmanbeta.Properties.Resources.Ghost_5_2">
+            <summary>
+              Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Mathmanbeta.Properties.Resources.Ghost_5_3">
+            <summary>
+              Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Mathmanbeta.Properties.Resources.Ghost_5_4">
+            <summary>
+              Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Mathmanbeta.Properties.Resources.Help_green">
+            <summary>
+              Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Mathmanbeta.Properties.Resources.HELP_red">
+            <summary>
+              Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Mathmanbeta.Properties.Resources.HighScore">
+            <summary>
+            Wyszukuje zlokalizowany ciąg podobny do ciągu 2100.
+            </summary>
+        </member>
+        <member name="P:Mathmanbeta.Properties.Resources.Life">
+            <summary>
+              Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Mathmanbeta.Properties.Resources.Logo">
+            <summary>
+              Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Mathmanbeta.Properties.Resources.Menu_green">
+            <summary>
+              Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Mathmanbeta.Properties.Resources.Menu_red">
+            <summary>
+              Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Mathmanbeta.Properties.Resources.Options_green">
+            <summary>
+              Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Mathmanbeta.Properties.Resources.Options_red">
+            <summary>
+              Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Mathmanbeta.Properties.Resources.Pacman_0">
+            <summary>
+              Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Mathmanbeta.Properties.Resources.Pacman_1_0">
+            <summary>
+              Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Mathmanbeta.Properties.Resources.Pacman_1_1">
+            <summary>
+              Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Mathmanbeta.Properties.Resources.Pacman_1_2">
+            <summary>
+              Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Mathmanbeta.Properties.Resources.Pacman_1_3">
+            <summary>
+              Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Mathmanbeta.Properties.Resources.Pacman_2_0">
+            <summary>
+              Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Mathmanbeta.Properties.Resources.Pacman_2_1">
+            <summary>
+              Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Mathmanbeta.Properties.Resources.Pacman_2_2">
+            <summary>
+              Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Mathmanbeta.Properties.Resources.Pacman_2_3">
+            <summary>
+              Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Mathmanbeta.Properties.Resources.Pacman_3_0">
+            <summary>
+              Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Mathmanbeta.Properties.Resources.Pacman_3_1">
+            <summary>
+              Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Mathmanbeta.Properties.Resources.Pacman_3_2">
+            <summary>
+              Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Mathmanbeta.Properties.Resources.Pacman_3_3">
+            <summary>
+              Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Mathmanbeta.Properties.Resources.Pacman_4_0">
+            <summary>
+              Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Mathmanbeta.Properties.Resources.Pacman_4_1">
+            <summary>
+              Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Mathmanbeta.Properties.Resources.Pacman_4_2">
+            <summary>
+              Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Mathmanbeta.Properties.Resources.Pacman_4_3">
+            <summary>
+              Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Mathmanbeta.Properties.Resources.Playnow_green">
+            <summary>
+              Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Mathmanbeta.Properties.Resources.Playnow_red">
+            <summary>
+              Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+            </summary>
+        </member>
+    </members>
+</doc>

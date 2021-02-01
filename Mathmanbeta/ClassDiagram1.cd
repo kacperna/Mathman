@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Mathmanbeta.GameBoard">
+    <Position X="7.25" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAAAAAAAAAAAAAABAAAgQAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\GameBoard.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mathmanbeta.Ghost">
+    <Position X="2.5" Y="0.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAQBAACMACKQgggAECABCAACQgAAAABAAAAEBAACABA=</HashCode>
+      <FileName>Classes\Ghost.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mathmanbeta.Math">
+    <Position X="7.25" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQACAAAAAAAAABAAAAAAAA=</HashCode>
+      <FileName>Classes\Math.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mathmanbeta.Pacman">
+    <Position X="5" Y="3" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAkACAQCACAAIABAgACogAAAABAAAAABAAAAAA=</HashCode>
+      <FileName>Classes\Pacman.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mathmanbeta.Program">
+    <Position X="12.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIAAAAAAAAAAgAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Classes\Program.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Form1" />
+      <Property Name="Resources" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Mathmanbeta.Form1">
+    <Position X="10.25" Y="1.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAADAABAAAAACAAAAmAgAAAAYAAAAUAAAAEAA=</HashCode>
+      <FileName>Form1.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Ghost" />
+      <Property Name="GameBoard" />
+      <Property Name="Math" />
+      <Property Name="Pacman" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Mathmanbeta.Properties.Resources" Collapsed="true">
+    <Position X="13" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>4AEAAAYA8AAAAAAAAAAB0AMAAQAAAAEAPADAAyAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
