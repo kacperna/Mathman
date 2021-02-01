@@ -1,0 +1,648 @@
+### YamlMime:ManagedReference
+items:
+- uid: Mathmanbeta.Pacman
+  commentId: T:Mathmanbeta.Pacman
+  id: Pacman
+  parent: Mathmanbeta
+  children:
+  - Mathmanbeta.Pacman.#ctor
+  - Mathmanbeta.Pacman.CreatePacmanImage(System.Windows.Forms.Form,System.Int32,System.Int32)
+  - Mathmanbeta.Pacman.currentDirection
+  - Mathmanbeta.Pacman.MovePacman(System.Int32)
+  - Mathmanbeta.Pacman.nextDirection
+  - Mathmanbeta.Pacman.Set_Pacman
+  - Mathmanbeta.Pacman.xCoordinate
+  - Mathmanbeta.Pacman.yCoordinate
+  langs:
+  - csharp
+  - vb
+  name: Pacman
+  nameWithType: Pacman
+  fullName: Mathmanbeta.Pacman
+  type: Class
+  source:
+    remote:
+      path: C:/Users/Kacper/source/repos/Mathmanbeta/Mathmanbeta/Classes/Pacman.cs
+    id: Pacman
+    path: Classes/Pacman.cs
+    startLine: 15
+  assemblies:
+  - Mathmanbeta
+  namespace: Mathmanbeta
+  summary: "\nKlasa odpowiedzialna za konfigurację i mechanikę Pacmana\n"
+  example: []
+  syntax:
+    content: public class Pacman
+    content.vb: Public Class Pacman
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Mathmanbeta.Pacman.xCoordinate
+  commentId: F:Mathmanbeta.Pacman.xCoordinate
+  id: xCoordinate
+  parent: Mathmanbeta.Pacman
+  langs:
+  - csharp
+  - vb
+  name: xCoordinate
+  nameWithType: Pacman.xCoordinate
+  fullName: Mathmanbeta.Pacman.xCoordinate
+  type: Field
+  source:
+    remote:
+      path: C:/Users/Kacper/source/repos/Mathmanbeta/Mathmanbeta/Classes/Pacman.cs
+    id: xCoordinate
+    path: Classes/Pacman.cs
+    startLine: 20
+  assemblies:
+  - Mathmanbeta
+  namespace: Mathmanbeta
+  summary: "\nAktualna współrzędna x Pacmana\n"
+  example: []
+  syntax:
+    content: public int xCoordinate
+    return:
+      type: System.Int32
+    content.vb: Public xCoordinate As Integer
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mathmanbeta.Pacman.yCoordinate
+  commentId: F:Mathmanbeta.Pacman.yCoordinate
+  id: yCoordinate
+  parent: Mathmanbeta.Pacman
+  langs:
+  - csharp
+  - vb
+  name: yCoordinate
+  nameWithType: Pacman.yCoordinate
+  fullName: Mathmanbeta.Pacman.yCoordinate
+  type: Field
+  source:
+    remote:
+      path: C:/Users/Kacper/source/repos/Mathmanbeta/Mathmanbeta/Classes/Pacman.cs
+    id: yCoordinate
+    path: Classes/Pacman.cs
+    startLine: 24
+  assemblies:
+  - Mathmanbeta
+  namespace: Mathmanbeta
+  summary: "\nAktualna współrzędna y Pacmana\n"
+  example: []
+  syntax:
+    content: public int yCoordinate
+    return:
+      type: System.Int32
+    content.vb: Public yCoordinate As Integer
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mathmanbeta.Pacman.currentDirection
+  commentId: F:Mathmanbeta.Pacman.currentDirection
+  id: currentDirection
+  parent: Mathmanbeta.Pacman
+  langs:
+  - csharp
+  - vb
+  name: currentDirection
+  nameWithType: Pacman.currentDirection
+  fullName: Mathmanbeta.Pacman.currentDirection
+  type: Field
+  source:
+    remote:
+      path: C:/Users/Kacper/source/repos/Mathmanbeta/Mathmanbeta/Classes/Pacman.cs
+    id: currentDirection
+    path: Classes/Pacman.cs
+    startLine: 30
+  assemblies:
+  - Mathmanbeta
+  namespace: Mathmanbeta
+  summary: "\nAktualny kierunek w którym porusza się Pacman\n"
+  example: []
+  syntax:
+    content: public int currentDirection
+    return:
+      type: System.Int32
+    content.vb: Public currentDirection As Integer
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mathmanbeta.Pacman.nextDirection
+  commentId: F:Mathmanbeta.Pacman.nextDirection
+  id: nextDirection
+  parent: Mathmanbeta.Pacman
+  langs:
+  - csharp
+  - vb
+  name: nextDirection
+  nameWithType: Pacman.nextDirection
+  fullName: Mathmanbeta.Pacman.nextDirection
+  type: Field
+  source:
+    remote:
+      path: C:/Users/Kacper/source/repos/Mathmanbeta/Mathmanbeta/Classes/Pacman.cs
+    id: nextDirection
+    path: Classes/Pacman.cs
+    startLine: 34
+  assemblies:
+  - Mathmanbeta
+  namespace: Mathmanbeta
+  summary: "\nkolejny kierunek w którym będzie się poruszał Pacman\n"
+  example: []
+  syntax:
+    content: public int nextDirection
+    return:
+      type: System.Int32
+    content.vb: Public nextDirection As Integer
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mathmanbeta.Pacman.#ctor
+  commentId: M:Mathmanbeta.Pacman.#ctor
+  id: '#ctor'
+  parent: Mathmanbeta.Pacman
+  langs:
+  - csharp
+  - vb
+  name: Pacman()
+  nameWithType: Pacman.Pacman()
+  fullName: Mathmanbeta.Pacman.Pacman()
+  type: Constructor
+  source:
+    remote:
+      path: C:/Users/Kacper/source/repos/Mathmanbeta/Mathmanbeta/Classes/Pacman.cs
+    id: .ctor
+    path: Classes/Pacman.cs
+    startLine: 44
+  assemblies:
+  - Mathmanbeta
+  namespace: Mathmanbeta
+  summary: "\nKonstruktor - wczytywanie obrazków Pacmana,ustalenie jego wielkości oraz ustawienie Timera\n"
+  example: []
+  syntax:
+    content: public Pacman()
+    content.vb: Public Sub New
+  overload: Mathmanbeta.Pacman.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mathmanbeta.Pacman.CreatePacmanImage(System.Windows.Forms.Form,System.Int32,System.Int32)
+  commentId: M:Mathmanbeta.Pacman.CreatePacmanImage(System.Windows.Forms.Form,System.Int32,System.Int32)
+  id: CreatePacmanImage(System.Windows.Forms.Form,System.Int32,System.Int32)
+  parent: Mathmanbeta.Pacman
+  langs:
+  - csharp
+  - vb
+  name: CreatePacmanImage(Form, Int32, Int32)
+  nameWithType: Pacman.CreatePacmanImage(Form, Int32, Int32)
+  fullName: Mathmanbeta.Pacman.CreatePacmanImage(System.Windows.Forms.Form, System.Int32, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: C:/Users/Kacper/source/repos/Mathmanbeta/Mathmanbeta/Classes/Pacman.cs
+    id: CreatePacmanImage
+    path: Classes/Pacman.cs
+    startLine: 78
+  assemblies:
+  - Mathmanbeta
+  namespace: Mathmanbeta
+  summary: "\nMetoda która tworzy i konfiguruje pole graficzne Pacmana\n"
+  example: []
+  syntax:
+    content: public void CreatePacmanImage(Form formInstance, int StartXCoordinate, int StartYCoordinate)
+    parameters:
+    - id: formInstance
+      type: System.Windows.Forms.Form
+      description: Komunikacja z formularzem wyświetlającym Pacmana
+    - id: StartXCoordinate
+      type: System.Int32
+      description: Współrzędna początkowa x
+    - id: StartYCoordinate
+      type: System.Int32
+      description: Współrzędna początkowa y
+    content.vb: Public Sub CreatePacmanImage(formInstance As Form, StartXCoordinate As Integer, StartYCoordinate As Integer)
+  overload: Mathmanbeta.Pacman.CreatePacmanImage*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mathmanbeta.Pacman.MovePacman(System.Int32)
+  commentId: M:Mathmanbeta.Pacman.MovePacman(System.Int32)
+  id: MovePacman(System.Int32)
+  parent: Mathmanbeta.Pacman
+  langs:
+  - csharp
+  - vb
+  name: MovePacman(Int32)
+  nameWithType: Pacman.MovePacman(Int32)
+  fullName: Mathmanbeta.Pacman.MovePacman(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: C:/Users/Kacper/source/repos/Mathmanbeta/Mathmanbeta/Classes/Pacman.cs
+    id: MovePacman
+    path: Classes/Pacman.cs
+    startLine: 92
+  assemblies:
+  - Mathmanbeta
+  namespace: Mathmanbeta
+  summary: "\nMetoda odpowiedzialna za poruszanie się Pacmana\n"
+  example: []
+  syntax:
+    content: public void MovePacman(int direction)
+    parameters:
+    - id: direction
+      type: System.Int32
+      description: Kierunek w którym ma poruszać się Pacman
+    content.vb: Public Sub MovePacman(direction As Integer)
+  overload: Mathmanbeta.Pacman.MovePacman*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mathmanbeta.Pacman.Set_Pacman
+  commentId: M:Mathmanbeta.Pacman.Set_Pacman
+  id: Set_Pacman
+  parent: Mathmanbeta.Pacman
+  langs:
+  - csharp
+  - vb
+  name: Set_Pacman()
+  nameWithType: Pacman.Set_Pacman()
+  fullName: Mathmanbeta.Pacman.Set_Pacman()
+  type: Method
+  source:
+    remote:
+      path: C:/Users/Kacper/source/repos/Mathmanbeta/Mathmanbeta/Classes/Pacman.cs
+    id: Set_Pacman
+    path: Classes/Pacman.cs
+    startLine: 168
+  assemblies:
+  - Mathmanbeta
+  namespace: Mathmanbeta
+  summary: "\nMetoda ustawiająca Pacmana w pozycji startowej\n"
+  example: []
+  syntax:
+    content: public void Set_Pacman()
+    content.vb: Public Sub Set_Pacman
+  overload: Mathmanbeta.Pacman.Set_Pacman*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Mathmanbeta
+  commentId: N:Mathmanbeta
+  name: Mathmanbeta
+  nameWithType: Mathmanbeta
+  fullName: Mathmanbeta
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Mathmanbeta.Pacman.#ctor*
+  commentId: Overload:Mathmanbeta.Pacman.#ctor
+  name: Pacman
+  nameWithType: Pacman.Pacman
+  fullName: Mathmanbeta.Pacman.Pacman
+- uid: Mathmanbeta.Pacman.CreatePacmanImage*
+  commentId: Overload:Mathmanbeta.Pacman.CreatePacmanImage
+  name: CreatePacmanImage
+  nameWithType: Pacman.CreatePacmanImage
+  fullName: Mathmanbeta.Pacman.CreatePacmanImage
+- uid: System.Windows.Forms.Form
+  commentId: T:System.Windows.Forms.Form
+  parent: System.Windows.Forms
+  isExternal: true
+  name: Form
+  nameWithType: Form
+  fullName: System.Windows.Forms.Form
+- uid: System.Windows.Forms
+  commentId: N:System.Windows.Forms
+  isExternal: true
+  name: System.Windows.Forms
+  nameWithType: System.Windows.Forms
+  fullName: System.Windows.Forms
+- uid: Mathmanbeta.Pacman.MovePacman*
+  commentId: Overload:Mathmanbeta.Pacman.MovePacman
+  name: MovePacman
+  nameWithType: Pacman.MovePacman
+  fullName: Mathmanbeta.Pacman.MovePacman
+- uid: Mathmanbeta.Pacman.Set_Pacman*
+  commentId: Overload:Mathmanbeta.Pacman.Set_Pacman
+  name: Set_Pacman
+  nameWithType: Pacman.Set_Pacman
+  fullName: Mathmanbeta.Pacman.Set_Pacman

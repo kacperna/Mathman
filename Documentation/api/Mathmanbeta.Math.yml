@@ -1,0 +1,636 @@
+### YamlMime:ManagedReference
+items:
+- uid: Mathmanbeta.Math
+  commentId: T:Mathmanbeta.Math
+  id: Math
+  parent: Mathmanbeta
+  children:
+  - Mathmanbeta.Math.#ctor
+  - Mathmanbeta.Math.CheckForPacman
+  - Mathmanbeta.Math.CreateEquation
+  - Mathmanbeta.Math.CreateLabels
+  - Mathmanbeta.Math.CreateMath(System.Windows.Forms.Form)
+  - Mathmanbeta.Math.Equation
+  - Mathmanbeta.Math.Result
+  langs:
+  - csharp
+  - vb
+  name: Math
+  nameWithType: Math
+  fullName: Mathmanbeta.Math
+  type: Class
+  source:
+    remote:
+      path: C:/Users/Kacper/source/repos/Mathmanbeta/Mathmanbeta/Classes/Math.cs
+    id: Math
+    path: Classes/Math.cs
+    startLine: 11
+  assemblies:
+  - Mathmanbeta
+  namespace: Mathmanbeta
+  summary: "\nKlasa odpowiedzialna za tworzenie działań i wyników, a także stopniownie trudności\n"
+  example: []
+  syntax:
+    content: public class Math
+    content.vb: Public Class Math
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Mathmanbeta.Math.Result
+  commentId: F:Mathmanbeta.Math.Result
+  id: Result
+  parent: Mathmanbeta.Math
+  langs:
+  - csharp
+  - vb
+  name: Result
+  nameWithType: Math.Result
+  fullName: Mathmanbeta.Math.Result
+  type: Field
+  source:
+    remote:
+      path: C:/Users/Kacper/source/repos/Mathmanbeta/Mathmanbeta/Classes/Math.cs
+    id: Result
+    path: Classes/Math.cs
+    startLine: 16
+  assemblies:
+  - Mathmanbeta
+  namespace: Mathmanbeta
+  summary: "\nTablica etykiet zawierających wyniki\n"
+  example: []
+  syntax:
+    content: public Label[] Result
+    return:
+      type: System.Windows.Forms.Label[]
+    content.vb: Public Result As Label()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mathmanbeta.Math.Equation
+  commentId: F:Mathmanbeta.Math.Equation
+  id: Equation
+  parent: Mathmanbeta.Math
+  langs:
+  - csharp
+  - vb
+  name: Equation
+  nameWithType: Math.Equation
+  fullName: Mathmanbeta.Math.Equation
+  type: Field
+  source:
+    remote:
+      path: C:/Users/Kacper/source/repos/Mathmanbeta/Mathmanbeta/Classes/Math.cs
+    id: Equation
+    path: Classes/Math.cs
+    startLine: 20
+  assemblies:
+  - Mathmanbeta
+  namespace: Mathmanbeta
+  summary: "\nEtykieta zawierająca działanie do wykonania\n"
+  example: []
+  syntax:
+    content: public Label Equation
+    return:
+      type: System.Windows.Forms.Label
+    content.vb: Public Equation As Label
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mathmanbeta.Math.#ctor
+  commentId: M:Mathmanbeta.Math.#ctor
+  id: '#ctor'
+  parent: Mathmanbeta.Math
+  langs:
+  - csharp
+  - vb
+  name: Math()
+  nameWithType: Math.Math()
+  fullName: Mathmanbeta.Math.Math()
+  type: Constructor
+  source:
+    remote:
+      path: C:/Users/Kacper/source/repos/Mathmanbeta/Mathmanbeta/Classes/Math.cs
+    id: .ctor
+    path: Classes/Math.cs
+    startLine: 35
+  assemblies:
+  - Mathmanbeta
+  namespace: Mathmanbeta
+  summary: "\nKonstruktor - ustawia Timer\n"
+  example: []
+  syntax:
+    content: public Math()
+    content.vb: Public Sub New
+  overload: Mathmanbeta.Math.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mathmanbeta.Math.CreateEquation
+  commentId: M:Mathmanbeta.Math.CreateEquation
+  id: CreateEquation
+  parent: Mathmanbeta.Math
+  langs:
+  - csharp
+  - vb
+  name: CreateEquation()
+  nameWithType: Math.CreateEquation()
+  fullName: Mathmanbeta.Math.CreateEquation()
+  type: Method
+  source:
+    remote:
+      path: C:/Users/Kacper/source/repos/Mathmanbeta/Mathmanbeta/Classes/Math.cs
+    id: CreateEquation
+    path: Classes/Math.cs
+    startLine: 44
+  assemblies:
+  - Mathmanbeta
+  namespace: Mathmanbeta
+  summary: "\nMetoda tworząca działania do rozwiązania, oraz stopniująca poziom trudności gry poprzez zwiększanie trudności działań oraz prędkości poruszania się duchów.\n"
+  example: []
+  syntax:
+    content: public void CreateEquation()
+    content.vb: Public Sub CreateEquation
+  overload: Mathmanbeta.Math.CreateEquation*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mathmanbeta.Math.CreateLabels
+  commentId: M:Mathmanbeta.Math.CreateLabels
+  id: CreateLabels
+  parent: Mathmanbeta.Math
+  langs:
+  - csharp
+  - vb
+  name: CreateLabels()
+  nameWithType: Math.CreateLabels()
+  fullName: Mathmanbeta.Math.CreateLabels()
+  type: Method
+  source:
+    remote:
+      path: C:/Users/Kacper/source/repos/Mathmanbeta/Mathmanbeta/Classes/Math.cs
+    id: CreateLabels
+    path: Classes/Math.cs
+    startLine: 106
+  assemblies:
+  - Mathmanbeta
+  namespace: Mathmanbeta
+  summary: "\nMetoda losująca rozmieszczenie wyników na planszy oraz zapisująca ich współrzędne.\n"
+  example: []
+  syntax:
+    content: public void CreateLabels()
+    content.vb: Public Sub CreateLabels
+  overload: Mathmanbeta.Math.CreateLabels*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mathmanbeta.Math.CreateMath(System.Windows.Forms.Form)
+  commentId: M:Mathmanbeta.Math.CreateMath(System.Windows.Forms.Form)
+  id: CreateMath(System.Windows.Forms.Form)
+  parent: Mathmanbeta.Math
+  langs:
+  - csharp
+  - vb
+  name: CreateMath(Form)
+  nameWithType: Math.CreateMath(Form)
+  fullName: Mathmanbeta.Math.CreateMath(System.Windows.Forms.Form)
+  type: Method
+  source:
+    remote:
+      path: C:/Users/Kacper/source/repos/Mathmanbeta/Mathmanbeta/Classes/Math.cs
+    id: CreateMath
+    path: Classes/Math.cs
+    startLine: 140
+  assemblies:
+  - Mathmanbeta
+  namespace: Mathmanbeta
+  summary: "\nMetoda wyświetlająca działania i wyniki\n"
+  example: []
+  syntax:
+    content: public void CreateMath(Form formInstance)
+    parameters:
+    - id: formInstance
+      type: System.Windows.Forms.Form
+      description: Komunikacja z formularzem wyświetlającym działania oraz wyniki
+    content.vb: Public Sub CreateMath(formInstance As Form)
+  overload: Mathmanbeta.Math.CreateMath*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mathmanbeta.Math.CheckForPacman
+  commentId: M:Mathmanbeta.Math.CheckForPacman
+  id: CheckForPacman
+  parent: Mathmanbeta.Math
+  langs:
+  - csharp
+  - vb
+  name: CheckForPacman()
+  nameWithType: Math.CheckForPacman()
+  fullName: Mathmanbeta.Math.CheckForPacman()
+  type: Method
+  source:
+    remote:
+      path: C:/Users/Kacper/source/repos/Mathmanbeta/Mathmanbeta/Classes/Math.cs
+    id: CheckForPacman
+    path: Classes/Math.cs
+    startLine: 182
+  assemblies:
+  - Mathmanbeta
+  namespace: Mathmanbeta
+  summary: "\nMetoda sprawdzająca kolizję gracza z wynikami\nWynik dobry - 300 punktów oraz zwiększenie poziomu\nWynik zły - strata życia\n"
+  example: []
+  syntax:
+    content: public void CheckForPacman()
+    content.vb: Public Sub CheckForPacman
+  overload: Mathmanbeta.Math.CheckForPacman*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Mathmanbeta
+  commentId: N:Mathmanbeta
+  name: Mathmanbeta
+  nameWithType: Mathmanbeta
+  fullName: Mathmanbeta
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Windows.Forms.Label[]
+  isExternal: true
+  name: Label[]
+  nameWithType: Label[]
+  fullName: System.Windows.Forms.Label[]
+  nameWithType.vb: Label()
+  fullName.vb: System.Windows.Forms.Label()
+  name.vb: Label()
+  spec.csharp:
+  - uid: System.Windows.Forms.Label
+    name: Label
+    nameWithType: Label
+    fullName: System.Windows.Forms.Label
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Windows.Forms.Label
+    name: Label
+    nameWithType: Label
+    fullName: System.Windows.Forms.Label
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: System.Windows.Forms.Label
+  commentId: T:System.Windows.Forms.Label
+  parent: System.Windows.Forms
+  isExternal: true
+  name: Label
+  nameWithType: Label
+  fullName: System.Windows.Forms.Label
+- uid: System.Windows.Forms
+  commentId: N:System.Windows.Forms
+  isExternal: true
+  name: System.Windows.Forms
+  nameWithType: System.Windows.Forms
+  fullName: System.Windows.Forms
+- uid: Mathmanbeta.Math.#ctor*
+  commentId: Overload:Mathmanbeta.Math.#ctor
+  name: Math
+  nameWithType: Math.Math
+  fullName: Mathmanbeta.Math.Math
+- uid: Mathmanbeta.Math.CreateEquation*
+  commentId: Overload:Mathmanbeta.Math.CreateEquation
+  name: CreateEquation
+  nameWithType: Math.CreateEquation
+  fullName: Mathmanbeta.Math.CreateEquation
+- uid: Mathmanbeta.Math.CreateLabels*
+  commentId: Overload:Mathmanbeta.Math.CreateLabels
+  name: CreateLabels
+  nameWithType: Math.CreateLabels
+  fullName: Mathmanbeta.Math.CreateLabels
+- uid: Mathmanbeta.Math.CreateMath*
+  commentId: Overload:Mathmanbeta.Math.CreateMath
+  name: CreateMath
+  nameWithType: Math.CreateMath
+  fullName: Mathmanbeta.Math.CreateMath
+- uid: System.Windows.Forms.Form
+  commentId: T:System.Windows.Forms.Form
+  parent: System.Windows.Forms
+  isExternal: true
+  name: Form
+  nameWithType: Form
+  fullName: System.Windows.Forms.Form
+- uid: Mathmanbeta.Math.CheckForPacman*
+  commentId: Overload:Mathmanbeta.Math.CheckForPacman
+  name: CheckForPacman
+  nameWithType: Math.CheckForPacman
+  fullName: Mathmanbeta.Math.CheckForPacman

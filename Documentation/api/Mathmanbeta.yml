@@ -1,0 +1,74 @@
+### YamlMime:ManagedReference
+items:
+- uid: Mathmanbeta
+  commentId: N:Mathmanbeta
+  id: Mathmanbeta
+  children:
+  - Mathmanbeta.Form1
+  - Mathmanbeta.Form2
+  - Mathmanbeta.Form3
+  - Mathmanbeta.Game
+  - Mathmanbeta.GameBoard
+  - Mathmanbeta.Ghost
+  - Mathmanbeta.Math
+  - Mathmanbeta.Pacman
+  langs:
+  - csharp
+  - vb
+  name: Mathmanbeta
+  nameWithType: Mathmanbeta
+  fullName: Mathmanbeta
+  type: Namespace
+  assemblies:
+  - Mathmanbeta
+references:
+- uid: Mathmanbeta.Game
+  commentId: T:Mathmanbeta.Game
+  parent: Mathmanbeta
+  name: Game
+  nameWithType: Game
+  fullName: Mathmanbeta.Game
+- uid: Mathmanbeta.GameBoard
+  commentId: T:Mathmanbeta.GameBoard
+  parent: Mathmanbeta
+  name: GameBoard
+  nameWithType: GameBoard
+  fullName: Mathmanbeta.GameBoard
+- uid: Mathmanbeta.Ghost
+  commentId: T:Mathmanbeta.Ghost
+  parent: Mathmanbeta
+  name: Ghost
+  nameWithType: Ghost
+  fullName: Mathmanbeta.Ghost
+- uid: Mathmanbeta.Math
+  commentId: T:Mathmanbeta.Math
+  parent: Mathmanbeta
+  name: Math
+  nameWithType: Math
+  fullName: Mathmanbeta.Math
+- uid: Mathmanbeta.Pacman
+  commentId: T:Mathmanbeta.Pacman
+  parent: Mathmanbeta
+  name: Pacman
+  nameWithType: Pacman
+  fullName: Mathmanbeta.Pacman
+- uid: Mathmanbeta.Form1
+  commentId: T:Mathmanbeta.Form1
+  name: Form1
+  nameWithType: Form1
+  fullName: Mathmanbeta.Form1
+- uid: Mathmanbeta.Form2
+  commentId: T:Mathmanbeta.Form2
+  name: Form2
+  nameWithType: Form2
+  fullName: Mathmanbeta.Form2
+- uid: Mathmanbeta.Form3
+  commentId: T:Mathmanbeta.Form3
+  name: Form3
+  nameWithType: Form3
+  fullName: Mathmanbeta.Form3
+- uid: Mathmanbeta
+  commentId: N:Mathmanbeta
+  name: Mathmanbeta
+  nameWithType: Mathmanbeta
+  fullName: Mathmanbeta

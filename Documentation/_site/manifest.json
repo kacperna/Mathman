@@ -1,0 +1,198 @@
+{
+  "homepages": [],
+  "source_base_path": "C:/Users/Kacper/Desktop/Mathmanbeta/Mathmanbeta",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mathmanbeta.Form1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mathmanbeta.Form1.html",
+          "hash": "s60ZwJiObqGqwVHxOp553w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mathmanbeta.Form2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mathmanbeta.Form2.html",
+          "hash": "jkcFqQ0BsPiqySAkIeZaGg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mathmanbeta.Form3.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mathmanbeta.Form3.html",
+          "hash": "Ode0IcKudvcAsy0qVH6QcQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mathmanbeta.Game.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mathmanbeta.Game.html",
+          "hash": "bdC0zHq7beyqMHPhJMRCqQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mathmanbeta.GameBoard.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mathmanbeta.GameBoard.html",
+          "hash": "ZZAjdvA+s5p53IAaDSXD6Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mathmanbeta.Ghost.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mathmanbeta.Ghost.html",
+          "hash": "E8kYaAvhirx/xoDkk+J0Hw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mathmanbeta.Math.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mathmanbeta.Math.html",
+          "hash": "aLbPOO8IUs2GTQiLljkBbA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mathmanbeta.Pacman.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mathmanbeta.Pacman.html",
+          "hash": "RkZw2K2N1DNrzZAus8EoWg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mathmanbeta.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mathmanbeta.html",
+          "hash": "9QGkKN2f7AtmW9Q3wavXbw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/index.html",
+          "hash": "W/gDTNC5NX6HDyZrMexdNg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/intro.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/intro.html",
+          "hash": "TQbUUbzb7LXdZWqPwfQvgQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "8buD2cOZmgJc9ei7x/VqDw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": true,
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {
+        "ConceptualDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 3,
+          "skipped_file_count": 1
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 9,
+          "skipped_file_count": 9
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": true,
+        "details": "Can support incremental post processing.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

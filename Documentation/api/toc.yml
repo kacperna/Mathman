@@ -1,0 +1,20 @@
+### YamlMime:TableOfContent
+- uid: Mathmanbeta
+  name: Mathmanbeta
+  items:
+  - uid: Mathmanbeta.Form1
+    name: Form1
+  - uid: Mathmanbeta.Form2
+    name: Form2
+  - uid: Mathmanbeta.Form3
+    name: Form3
+  - uid: Mathmanbeta.Game
+    name: Game
+  - uid: Mathmanbeta.GameBoard
+    name: GameBoard
+  - uid: Mathmanbeta.Ghost
+    name: Ghost
+  - uid: Mathmanbeta.Math
+    name: Math
+  - uid: Mathmanbeta.Pacman
+    name: Pacman

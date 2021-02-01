@@ -1,0 +1,622 @@
+### YamlMime:ManagedReference
+items:
+- uid: Mathmanbeta.Game
+  commentId: T:Mathmanbeta.Game
+  id: Game
+  parent: Mathmanbeta
+  children:
+  - Mathmanbeta.Game.ChangeLevel
+  - Mathmanbeta.Game.CreateLives(System.Windows.Forms.Form)
+  - Mathmanbeta.Game.CreatePlayerDetails(System.Windows.Forms.Form)
+  - Mathmanbeta.Game.Level
+  - Mathmanbeta.Game.LoseLife
+  - Mathmanbeta.Game.SetLives
+  - Mathmanbeta.Game.UpdateScore(System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: Game
+  nameWithType: Game
+  fullName: Mathmanbeta.Game
+  type: Class
+  source:
+    remote:
+      path: C:/Users/Kacper/source/repos/Mathmanbeta/Mathmanbeta/Classes/Game.cs
+    id: Game
+    path: Classes/Game.cs
+    startLine: 15
+  assemblies:
+  - Mathmanbeta
+  namespace: Mathmanbeta
+  summary: "\nKlasa odpowiedzialna za stan gry, zliczająca poziom, wynik oraz liczbę pozostałych żyć\n"
+  example: []
+  syntax:
+    content: public class Game
+    content.vb: Public Class Game
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Mathmanbeta.Game.Level
+  commentId: F:Mathmanbeta.Game.Level
+  id: Level
+  parent: Mathmanbeta.Game
+  langs:
+  - csharp
+  - vb
+  name: Level
+  nameWithType: Game.Level
+  fullName: Mathmanbeta.Game.Level
+  type: Field
+  source:
+    remote:
+      path: C:/Users/Kacper/source/repos/Mathmanbeta/Mathmanbeta/Classes/Game.cs
+    id: Level
+    path: Classes/Game.cs
+    startLine: 27
+  assemblies:
+  - Mathmanbeta
+  namespace: Mathmanbeta
+  summary: "\nNumer poziomu\n"
+  example: []
+  syntax:
+    content: public int Level
+    return:
+      type: System.Int32
+    content.vb: Public Level As Integer
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mathmanbeta.Game.CreateLives(System.Windows.Forms.Form)
+  commentId: M:Mathmanbeta.Game.CreateLives(System.Windows.Forms.Form)
+  id: CreateLives(System.Windows.Forms.Form)
+  parent: Mathmanbeta.Game
+  langs:
+  - csharp
+  - vb
+  name: CreateLives(Form)
+  nameWithType: Game.CreateLives(Form)
+  fullName: Mathmanbeta.Game.CreateLives(System.Windows.Forms.Form)
+  type: Method
+  source:
+    remote:
+      path: C:/Users/Kacper/source/repos/Mathmanbeta/Mathmanbeta/Classes/Game.cs
+    id: CreateLives
+    path: Classes/Game.cs
+    startLine: 36
+  assemblies:
+  - Mathmanbeta
+  namespace: Mathmanbeta
+  summary: "\nMetoda która ustawia grę w jej początkowej wersji oraz tworzy tablicę pól obrazów z życiami\n"
+  example: []
+  syntax:
+    content: public void CreateLives(Form formInstance)
+    parameters:
+    - id: formInstance
+      type: System.Windows.Forms.Form
+      description: Komunikacja z formularzem wyświetlającym liczbę żyć
+    content.vb: Public Sub CreateLives(formInstance As Form)
+  overload: Mathmanbeta.Game.CreateLives*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mathmanbeta.Game.ChangeLevel
+  commentId: M:Mathmanbeta.Game.ChangeLevel
+  id: ChangeLevel
+  parent: Mathmanbeta.Game
+  langs:
+  - csharp
+  - vb
+  name: ChangeLevel()
+  nameWithType: Game.ChangeLevel()
+  fullName: Mathmanbeta.Game.ChangeLevel()
+  type: Method
+  source:
+    remote:
+      path: C:/Users/Kacper/source/repos/Mathmanbeta/Mathmanbeta/Classes/Game.cs
+    id: ChangeLevel
+    path: Classes/Game.cs
+    startLine: 57
+  assemblies:
+  - Mathmanbeta
+  namespace: Mathmanbeta
+  summary: "\nMetoda która zwiększa poziom i po każdej jego inkrementacji przywraca avatara i duchy do pozycji początkowej\n"
+  example: []
+  syntax:
+    content: public void ChangeLevel()
+    content.vb: Public Sub ChangeLevel
+  overload: Mathmanbeta.Game.ChangeLevel*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mathmanbeta.Game.CreatePlayerDetails(System.Windows.Forms.Form)
+  commentId: M:Mathmanbeta.Game.CreatePlayerDetails(System.Windows.Forms.Form)
+  id: CreatePlayerDetails(System.Windows.Forms.Form)
+  parent: Mathmanbeta.Game
+  langs:
+  - csharp
+  - vb
+  name: CreatePlayerDetails(Form)
+  nameWithType: Game.CreatePlayerDetails(Form)
+  fullName: Mathmanbeta.Game.CreatePlayerDetails(System.Windows.Forms.Form)
+  type: Method
+  source:
+    remote:
+      path: C:/Users/Kacper/source/repos/Mathmanbeta/Mathmanbeta/Classes/Game.cs
+    id: CreatePlayerDetails
+    path: Classes/Game.cs
+    startLine: 68
+  assemblies:
+  - Mathmanbeta
+  namespace: Mathmanbeta
+  summary: "\nMetoda odpowiedzialna za stworzenie i konfigurację etykiety zawierającej wynik\n"
+  example: []
+  syntax:
+    content: public void CreatePlayerDetails(Form formInstance)
+    parameters:
+    - id: formInstance
+      type: System.Windows.Forms.Form
+      description: Komunikacja z formularzem wyświetlającym wynik
+    content.vb: Public Sub CreatePlayerDetails(formInstance As Form)
+  overload: Mathmanbeta.Game.CreatePlayerDetails*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mathmanbeta.Game.UpdateScore(System.Int32)
+  commentId: M:Mathmanbeta.Game.UpdateScore(System.Int32)
+  id: UpdateScore(System.Int32)
+  parent: Mathmanbeta.Game
+  langs:
+  - csharp
+  - vb
+  name: UpdateScore(Int32)
+  nameWithType: Game.UpdateScore(Int32)
+  fullName: Mathmanbeta.Game.UpdateScore(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: C:/Users/Kacper/source/repos/Mathmanbeta/Mathmanbeta/Classes/Game.cs
+    id: UpdateScore
+    path: Classes/Game.cs
+    startLine: 96
+  assemblies:
+  - Mathmanbeta
+  namespace: Mathmanbeta
+  summary: "\nMetoda odpowiedzialna za wyświetlanie i zliczanie zdobytego wyniku\n"
+  example: []
+  syntax:
+    content: public void UpdateScore(int amount)
+    parameters:
+    - id: amount
+      type: System.Int32
+      description: Liczba zdobytych punktów
+    content.vb: Public Sub UpdateScore(amount As Integer)
+  overload: Mathmanbeta.Game.UpdateScore*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mathmanbeta.Game.SetLives
+  commentId: M:Mathmanbeta.Game.SetLives
+  id: SetLives
+  parent: Mathmanbeta.Game
+  langs:
+  - csharp
+  - vb
+  name: SetLives()
+  nameWithType: Game.SetLives()
+  fullName: Mathmanbeta.Game.SetLives()
+  type: Method
+  source:
+    remote:
+      path: C:/Users/Kacper/source/repos/Mathmanbeta/Mathmanbeta/Classes/Game.cs
+    id: SetLives
+    path: Classes/Game.cs
+    startLine: 109
+  assemblies:
+  - Mathmanbeta
+  namespace: Mathmanbeta
+  summary: "\nMetoda odpowiedzialna za wyświetlanie liczby żyć\n"
+  example: []
+  syntax:
+    content: public void SetLives()
+    content.vb: Public Sub SetLives
+  overload: Mathmanbeta.Game.SetLives*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mathmanbeta.Game.LoseLife
+  commentId: M:Mathmanbeta.Game.LoseLife
+  id: LoseLife
+  parent: Mathmanbeta.Game
+  langs:
+  - csharp
+  - vb
+  name: LoseLife()
+  nameWithType: Game.LoseLife()
+  fullName: Mathmanbeta.Game.LoseLife()
+  type: Method
+  source:
+    remote:
+      path: C:/Users/Kacper/source/repos/Mathmanbeta/Mathmanbeta/Classes/Game.cs
+    id: LoseLife
+    path: Classes/Game.cs
+    startLine: 125
+  assemblies:
+  - Mathmanbeta
+  namespace: Mathmanbeta
+  summary: "\nMetoda zmniejszająca liczbę żyć\n"
+  example: []
+  syntax:
+    content: public void LoseLife()
+    content.vb: Public Sub LoseLife
+  overload: Mathmanbeta.Game.LoseLife*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Mathmanbeta
+  commentId: N:Mathmanbeta
+  name: Mathmanbeta
+  nameWithType: Mathmanbeta
+  fullName: Mathmanbeta
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Mathmanbeta.Game.CreateLives*
+  commentId: Overload:Mathmanbeta.Game.CreateLives
+  name: CreateLives
+  nameWithType: Game.CreateLives
+  fullName: Mathmanbeta.Game.CreateLives
+- uid: System.Windows.Forms.Form
+  commentId: T:System.Windows.Forms.Form
+  parent: System.Windows.Forms
+  isExternal: true
+  name: Form
+  nameWithType: Form
+  fullName: System.Windows.Forms.Form
+- uid: System.Windows.Forms
+  commentId: N:System.Windows.Forms
+  isExternal: true
+  name: System.Windows.Forms
+  nameWithType: System.Windows.Forms
+  fullName: System.Windows.Forms
+- uid: Mathmanbeta.Game.ChangeLevel*
+  commentId: Overload:Mathmanbeta.Game.ChangeLevel
+  name: ChangeLevel
+  nameWithType: Game.ChangeLevel
+  fullName: Mathmanbeta.Game.ChangeLevel
+- uid: Mathmanbeta.Game.CreatePlayerDetails*
+  commentId: Overload:Mathmanbeta.Game.CreatePlayerDetails
+  name: CreatePlayerDetails
+  nameWithType: Game.CreatePlayerDetails
+  fullName: Mathmanbeta.Game.CreatePlayerDetails
+- uid: Mathmanbeta.Game.UpdateScore*
+  commentId: Overload:Mathmanbeta.Game.UpdateScore
+  name: UpdateScore
+  nameWithType: Game.UpdateScore
+  fullName: Mathmanbeta.Game.UpdateScore
+- uid: Mathmanbeta.Game.SetLives*
+  commentId: Overload:Mathmanbeta.Game.SetLives
+  name: SetLives
+  nameWithType: Game.SetLives
+  fullName: Mathmanbeta.Game.SetLives
+- uid: Mathmanbeta.Game.LoseLife*
+  commentId: Overload:Mathmanbeta.Game.LoseLife
+  name: LoseLife
+  nameWithType: Game.LoseLife
+  fullName: Mathmanbeta.Game.LoseLife

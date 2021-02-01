@@ -1,0 +1,578 @@
+### YamlMime:ManagedReference
+items:
+- uid: Mathmanbeta.Ghost
+  commentId: T:Mathmanbeta.Ghost
+  id: Ghost
+  parent: Mathmanbeta
+  children:
+  - Mathmanbeta.Ghost.#ctor
+  - Mathmanbeta.Ghost.CheckForPacman
+  - Mathmanbeta.Ghost.CreateGhostImage(System.Windows.Forms.Form)
+  - Mathmanbeta.Ghost.ResetGhosts
+  - Mathmanbeta.Ghost.Set_Ghosts
+  - Mathmanbeta.Ghost.timer
+  langs:
+  - csharp
+  - vb
+  name: Ghost
+  nameWithType: Ghost
+  fullName: Mathmanbeta.Ghost
+  type: Class
+  source:
+    remote:
+      path: C:/Users/Kacper/source/repos/Mathmanbeta/Mathmanbeta/Classes/Ghost.cs
+    id: Ghost
+    path: Classes/Ghost.cs
+    startLine: 15
+  assemblies:
+  - Mathmanbeta
+  namespace: Mathmanbeta
+  summary: "\nKlasa odpowiedzialna za konfigurację i mechanikę duchów\n"
+  example: []
+  syntax:
+    content: public class Ghost
+    content.vb: Public Class Ghost
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Mathmanbeta.Ghost.timer
+  commentId: F:Mathmanbeta.Ghost.timer
+  id: timer
+  parent: Mathmanbeta.Ghost
+  langs:
+  - csharp
+  - vb
+  name: timer
+  nameWithType: Ghost.timer
+  fullName: Mathmanbeta.Ghost.timer
+  type: Field
+  source:
+    remote:
+      path: C:/Users/Kacper/source/repos/Mathmanbeta/Mathmanbeta/Classes/Ghost.cs
+    id: timer
+    path: Classes/Ghost.cs
+    startLine: 24
+  assemblies:
+  - Mathmanbeta
+  namespace: Mathmanbeta
+  summary: "\nTimer w którego interwałach poruszająsię duchy \n"
+  example: []
+  syntax:
+    content: public Timer timer
+    return:
+      type: System.Windows.Forms.Timer
+    content.vb: Public timer As Timer
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mathmanbeta.Ghost.#ctor
+  commentId: M:Mathmanbeta.Ghost.#ctor
+  id: '#ctor'
+  parent: Mathmanbeta.Ghost
+  langs:
+  - csharp
+  - vb
+  name: Ghost()
+  nameWithType: Ghost.Ghost()
+  fullName: Mathmanbeta.Ghost.Ghost()
+  type: Constructor
+  source:
+    remote:
+      path: C:/Users/Kacper/source/repos/Mathmanbeta/Mathmanbeta/Classes/Ghost.cs
+    id: .ctor
+    path: Classes/Ghost.cs
+    startLine: 36
+  assemblies:
+  - Mathmanbeta
+  namespace: Mathmanbeta
+  summary: "\nKonstruktor - wczytywanie obrazków duchów,ustalenie ich wielkości oraz ustawienie Timera\n"
+  example: []
+  syntax:
+    content: public Ghost()
+    content.vb: Public Sub New
+  overload: Mathmanbeta.Ghost.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mathmanbeta.Ghost.CreateGhostImage(System.Windows.Forms.Form)
+  commentId: M:Mathmanbeta.Ghost.CreateGhostImage(System.Windows.Forms.Form)
+  id: CreateGhostImage(System.Windows.Forms.Form)
+  parent: Mathmanbeta.Ghost
+  langs:
+  - csharp
+  - vb
+  name: CreateGhostImage(Form)
+  nameWithType: Ghost.CreateGhostImage(Form)
+  fullName: Mathmanbeta.Ghost.CreateGhostImage(System.Windows.Forms.Form)
+  type: Method
+  source:
+    remote:
+      path: C:/Users/Kacper/source/repos/Mathmanbeta/Mathmanbeta/Classes/Ghost.cs
+    id: CreateGhostImage
+    path: Classes/Ghost.cs
+    startLine: 80
+  assemblies:
+  - Mathmanbeta
+  namespace: Mathmanbeta
+  summary: "\nTworzenie tablicy pól graficznych zawierających obrazki duchów\n"
+  example: []
+  syntax:
+    content: public void CreateGhostImage(Form formInstance)
+    parameters:
+    - id: formInstance
+      type: System.Windows.Forms.Form
+      description: Komunikacja z formularzem wyświetlającym duchy
+    content.vb: Public Sub CreateGhostImage(formInstance As Form)
+  overload: Mathmanbeta.Ghost.CreateGhostImage*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mathmanbeta.Ghost.Set_Ghosts
+  commentId: M:Mathmanbeta.Ghost.Set_Ghosts
+  id: Set_Ghosts
+  parent: Mathmanbeta.Ghost
+  langs:
+  - csharp
+  - vb
+  name: Set_Ghosts()
+  nameWithType: Ghost.Set_Ghosts()
+  fullName: Mathmanbeta.Ghost.Set_Ghosts()
+  type: Method
+  source:
+    remote:
+      path: C:/Users/Kacper/source/repos/Mathmanbeta/Mathmanbeta/Classes/Ghost.cs
+    id: Set_Ghosts
+    path: Classes/Ghost.cs
+    startLine: 98
+  assemblies:
+  - Mathmanbeta
+  namespace: Mathmanbeta
+  summary: "\nMetoda znajdująca pozycje początkowe duchów\n"
+  example: []
+  syntax:
+    content: public void Set_Ghosts()
+    content.vb: Public Sub Set_Ghosts
+  overload: Mathmanbeta.Ghost.Set_Ghosts*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mathmanbeta.Ghost.ResetGhosts
+  commentId: M:Mathmanbeta.Ghost.ResetGhosts
+  id: ResetGhosts
+  parent: Mathmanbeta.Ghost
+  langs:
+  - csharp
+  - vb
+  name: ResetGhosts()
+  nameWithType: Ghost.ResetGhosts()
+  fullName: Mathmanbeta.Ghost.ResetGhosts()
+  type: Method
+  source:
+    remote:
+      path: C:/Users/Kacper/source/repos/Mathmanbeta/Mathmanbeta/Classes/Ghost.cs
+    id: ResetGhosts
+    path: Classes/Ghost.cs
+    startLine: 118
+  assemblies:
+  - Mathmanbeta
+  namespace: Mathmanbeta
+  summary: "\nMetoda wczytująca obrazki duchów na pozycjach początkowych\n"
+  example: []
+  syntax:
+    content: public void ResetGhosts()
+    content.vb: Public Sub ResetGhosts
+  overload: Mathmanbeta.Ghost.ResetGhosts*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mathmanbeta.Ghost.CheckForPacman
+  commentId: M:Mathmanbeta.Ghost.CheckForPacman
+  id: CheckForPacman
+  parent: Mathmanbeta.Ghost
+  langs:
+  - csharp
+  - vb
+  name: CheckForPacman()
+  nameWithType: Ghost.CheckForPacman()
+  fullName: Mathmanbeta.Ghost.CheckForPacman()
+  type: Method
+  source:
+    remote:
+      path: C:/Users/Kacper/source/repos/Mathmanbeta/Mathmanbeta/Classes/Ghost.cs
+    id: CheckForPacman
+    path: Classes/Ghost.cs
+    startLine: 232
+  assemblies:
+  - Mathmanbeta
+  namespace: Mathmanbeta
+  summary: "\nMetoda sprawdzająca kolizję duchów z graczem, każda kolizja to strata jednego życia\n"
+  example: []
+  syntax:
+    content: public void CheckForPacman()
+    content.vb: Public Sub CheckForPacman
+  overload: Mathmanbeta.Ghost.CheckForPacman*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Mathmanbeta
+  commentId: N:Mathmanbeta
+  name: Mathmanbeta
+  nameWithType: Mathmanbeta
+  fullName: Mathmanbeta
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Windows.Forms.Timer
+  commentId: T:System.Windows.Forms.Timer
+  parent: System.Windows.Forms
+  isExternal: true
+  name: Timer
+  nameWithType: Timer
+  fullName: System.Windows.Forms.Timer
+- uid: System.Windows.Forms
+  commentId: N:System.Windows.Forms
+  isExternal: true
+  name: System.Windows.Forms
+  nameWithType: System.Windows.Forms
+  fullName: System.Windows.Forms
+- uid: Mathmanbeta.Ghost.#ctor*
+  commentId: Overload:Mathmanbeta.Ghost.#ctor
+  name: Ghost
+  nameWithType: Ghost.Ghost
+  fullName: Mathmanbeta.Ghost.Ghost
+- uid: Mathmanbeta.Ghost.CreateGhostImage*
+  commentId: Overload:Mathmanbeta.Ghost.CreateGhostImage
+  name: CreateGhostImage
+  nameWithType: Ghost.CreateGhostImage
+  fullName: Mathmanbeta.Ghost.CreateGhostImage
+- uid: System.Windows.Forms.Form
+  commentId: T:System.Windows.Forms.Form
+  parent: System.Windows.Forms
+  isExternal: true
+  name: Form
+  nameWithType: Form
+  fullName: System.Windows.Forms.Form
+- uid: Mathmanbeta.Ghost.Set_Ghosts*
+  commentId: Overload:Mathmanbeta.Ghost.Set_Ghosts
+  name: Set_Ghosts
+  nameWithType: Ghost.Set_Ghosts
+  fullName: Mathmanbeta.Ghost.Set_Ghosts
+- uid: Mathmanbeta.Ghost.ResetGhosts*
+  commentId: Overload:Mathmanbeta.Ghost.ResetGhosts
+  name: ResetGhosts
+  nameWithType: Ghost.ResetGhosts
+  fullName: Mathmanbeta.Ghost.ResetGhosts
+- uid: Mathmanbeta.Ghost.CheckForPacman*
+  commentId: Overload:Mathmanbeta.Ghost.CheckForPacman
+  name: CheckForPacman
+  nameWithType: Ghost.CheckForPacman
+  fullName: Mathmanbeta.Ghost.CheckForPacman
