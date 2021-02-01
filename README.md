@@ -16,7 +16,7 @@ Project is created with:
 To clone repository:
 ```shell
 $ git clone https://github.com/kacpernar/Mathman
-$ cd pacman
+$ cd Mathman
 ```
 ## Screenshots
 ![Screenshot](https://github.com/kacpernar/Mathman/blob/master/Images/picture1.PNG)
