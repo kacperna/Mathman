@@ -4,7 +4,7 @@
 * [Setup](#setup)
 * [Screenshots](#Screenshots)
 ## General info
-Pacman application with educational element coded in C# and tested in xUnit
+Pacman application with educational element, coded in C# and tested in xUnit
 	
 ## Technologies
 Project is created with:
